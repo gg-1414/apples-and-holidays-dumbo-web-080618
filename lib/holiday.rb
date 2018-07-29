@@ -68,8 +68,8 @@ def all_supplies_in_holidays(holiday_hash)
       if holiday_name.length == 1 
         puts "  #{holiday_key.to_s.tr("_", " ").capitalize}: #{supplies.join(", ")}"
       else  
-         holiday.
-        puts " #{holiday_name.join(" ").capitalize}: #{supplies.join(" ")}"
+        returned_holiday_name = holiday_name.map {|word| word.capitalize}.join(" ")
+        puts " #{returned_holiday_name}: #{supplies.join(" ")}"
       end 
     end 
   end 
