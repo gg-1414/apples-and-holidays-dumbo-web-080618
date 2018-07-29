@@ -66,7 +66,7 @@ def all_supplies_in_holidays(holiday_hash)
     holiday.each do |holiday_key, supplies|
       holiday_name = holiday_key.to_s.tr("_", " ").split
       binding.pry
-      if  == 
+      
         puts "  #{holiday_key.to_s.tr("_", " ").capitalize}: #{supplies.join(", ")}"
 
     end 
