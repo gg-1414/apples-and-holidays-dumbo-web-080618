@@ -75,6 +75,7 @@ def all_supplies_in_holidays(holiday_hash)
       #_____________________________
       
       holiday_key.to_s.split("_").map {|word| word.capitalize}.join(" ")
+      puts "  #{}"
       
       end 
     end 
